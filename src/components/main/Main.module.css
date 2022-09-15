@@ -1,0 +1,31 @@
+.mainBlock {
+    background-color: rgb(26, 119, 218);
+    height: 100vh;
+}
+
+.mainWrapper {
+    border: 1px solid;
+    background-color: aqua;
+
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mainText {
+    background-color: white;
+    border: 1px solid;
+    width: 400px;
+}
+
+.mainPhoto {
+    width: 300px;
+    height: 400px;
+
+    background-color: white;
+    border: 1px solid;
+}
