@@ -1,0 +1,49 @@
+.block {
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.container {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    border: 1px solid;
+}
+
+.contacts input {
+    width: 25rem;
+    height: 3em;
+
+    border-radius: 3px;
+    border: 1px solid;
+    outline: none;
+
+    background: transparent;
+}
+
+.contacts textarea {
+    width: 25rem;
+    min-height: 8em;
+
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 3px;
+    outline: none;
+}
+
+.formInputName {
+    margin-top: 20px;
+}
+
+.formInputEmail {
+    margin-top: 20px;
+}
+
+.formInputMessage {
+    margin-top: 30px;
+}
+.formSubmitButton {
+    margin: 13px 175px;
+}

@@ -1,14 +1,15 @@
 import React from "react";
 import s from "./Skills.module.css";
+import sWrapper from "../../common/styles/WrapperForCards.module.css";
 import sContainer from "../../common/styles/Container.module.css";
 import Skill from "./skill/Skill";
 
 const Skills = () => {
     return (
-        <div className={s.block}>
-            <div className={`${s.container} ${sContainer.container}`}>
-                <h2 className={s.title}>Skills</h2>
-                <div className={s.wrapper}>
+        <section className={s.block}>
+            <div className={`${sWrapper.container} ${sContainer.container}`}>
+                <h2 className={sWrapper.title}>Skills</h2>
+                <div className={sWrapper.wrapper}>
                     <Skill
                         title={"JavaScript"}
                         description={
@@ -29,7 +30,7 @@ const Skills = () => {
                     />
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 export default Skills;

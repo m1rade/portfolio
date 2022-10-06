@@ -4,7 +4,7 @@ import sContainer from "../../common/styles/Container.module.css"
 
 const Main = () => {
     return (
-        <div className={s.block}>
+        <section className={s.block}>
             <div className={sContainer.container}>
                 <div className={s.text}>
                     <span>Hi There!</span>
@@ -13,7 +13,7 @@ const Main = () => {
                 </div>
                 <div className={s.photo}></div>
             </div>
-        </div>
+        </section>
     );
 };
 

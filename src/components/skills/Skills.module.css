@@ -2,22 +2,3 @@
     height: 100vh;
     background-color: rgb(193, 196, 101);
 }
-
-.container {
-    justify-content: flex-start;
-    flex-direction: column;
-}
-
-.title {
-    border: 1px solid;
-    background-color: pink;
-}
-
-.wrapper {
-    border: 1px solid;
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
