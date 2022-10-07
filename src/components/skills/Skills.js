@@ -23,31 +23,25 @@ const Skills = () => {
                         }
                     />
                     <Skill
-                        title={"React/Redux"}
+                        title={"React"}
                         description={
                             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
                         }
                     />
                     <Skill
-                        title={"React/Redux"}
+                        title={"Redux"}
                         description={
                             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
                         }
                     />
                     <Skill
-                        title={"React/Redux"}
+                        title={"React Native"}
                         description={
                             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
                         }
                     />
                     <Skill
-                        title={"React/Redux"}
-                        description={
-                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
-                        }
-                    />
-                    <Skill
-                        title={"React/Redux"}
+                        title={"Angular"}
                         description={
                             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
                         }

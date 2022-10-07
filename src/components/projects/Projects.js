@@ -23,37 +23,19 @@ const Projects = () => {
                         }
                     />
                     <Project
-                        title={"Social Network"}
+                        title={"Todo List"}
                         description={
                             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
                         }
-                    />{" "}
+                    />
                     <Project
                         title={"Social Network"}
                         description={
                             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
                         }
-                    />{" "}
+                    />
                     <Project
-                        title={"Social Network"}
-                        description={
-                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
-                        }
-                    />{" "}
-                    <Project
-                        title={"Social Network"}
-                        description={
-                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
-                        }
-                    />{" "}
-                    <Project
-                        title={"Social Network"}
-                        description={
-                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
-                        }
-                    />{" "}
-                    <Project
-                        title={"Social Network"}
+                        title={"Todo List"}
                         description={
                             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
                         }
