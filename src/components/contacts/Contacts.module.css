@@ -37,6 +37,7 @@
 
 .contactsGroup textarea {
     min-height: 120px;
+    overflow: auto;
     resize: vertical;
 }
 
