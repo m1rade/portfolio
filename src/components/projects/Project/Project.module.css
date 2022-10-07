@@ -1,5 +1,17 @@
-.picture {
+.pictureContainer {
     height: 100px;
     width: 100px;
     background-color: rgb(167, 152, 152);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pictureContainer button {
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+
+    cursor: pointer;
 }
