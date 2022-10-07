@@ -12,11 +12,51 @@ const Projects = () => {
                 <div className={sWrapper.wrapper}>
                     <Project
                         title={"Todo List"}
-                        description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."}
+                        description={
+                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
+                        }
                     />
                     <Project
                         title={"Social Network"}
-                        description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."}
+                        description={
+                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
+                        }
+                    />
+                    <Project
+                        title={"Social Network"}
+                        description={
+                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
+                        }
+                    />{" "}
+                    <Project
+                        title={"Social Network"}
+                        description={
+                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
+                        }
+                    />{" "}
+                    <Project
+                        title={"Social Network"}
+                        description={
+                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
+                        }
+                    />{" "}
+                    <Project
+                        title={"Social Network"}
+                        description={
+                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
+                        }
+                    />{" "}
+                    <Project
+                        title={"Social Network"}
+                        description={
+                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
+                        }
+                    />{" "}
+                    <Project
+                        title={"Social Network"}
+                        description={
+                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
+                        }
                     />
                 </div>
             </div>

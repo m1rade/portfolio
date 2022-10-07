@@ -28,6 +28,30 @@ const Skills = () => {
                             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
                         }
                     />
+                    <Skill
+                        title={"React/Redux"}
+                        description={
+                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
+                        }
+                    />
+                    <Skill
+                        title={"React/Redux"}
+                        description={
+                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
+                        }
+                    />
+                    <Skill
+                        title={"React/Redux"}
+                        description={
+                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
+                        }
+                    />
+                    <Skill
+                        title={"React/Redux"}
+                        description={
+                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."
+                        }
+                    />
                 </div>
             </div>
         </section>
