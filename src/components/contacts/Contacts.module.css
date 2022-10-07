@@ -12,20 +12,18 @@
     border: 1px solid;
 }
 
-.contacts input {
-    width: 25rem;
-    height: 3em;
-
-    border-radius: 3px;
-    border: 1px solid;
-    outline: none;
-
-    background: transparent;
+.contactsGroup {
+    width: 80%;
 }
 
-.contacts textarea {
-    width: 25rem;
-    min-height: 8em;
+.contactsGroup label {
+    font-size: 1.1rem;
+}
+
+.contactsGroup input,
+.contactsGroup textarea {
+    width: 100%;
+    padding: 0.2rem;
 
     background: transparent;
     border: 1px solid black;
@@ -33,17 +31,28 @@
     outline: none;
 }
 
-.formInputName {
-    margin-top: 20px;
+.contactsGroup input {
+    height: 3em;
 }
 
-.formInputEmail {
-    margin-top: 20px;
+.contactsGroup textarea {
+    min-height: 120px;
+    resize: vertical;
 }
 
-.formInputMessage {
-    margin-top: 30px;
+.formInputName, .formInputEmail, .formInputMessage {
+    margin-bottom: 1.2rem;
 }
+
 .formSubmitButton {
-    margin: 13px 175px;
+    outline: none;
+
+    display: block;
+    margin: 0 auto;
+    padding: 10px 50px;
+    border-radius: 3px;
+    font-size: 1rem;
+
+    background-color: coral;
+    color: darkblue;
 }
