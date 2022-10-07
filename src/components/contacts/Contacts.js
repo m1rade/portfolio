@@ -9,23 +9,17 @@ const Contacts = () => {
                 <h2 className={s.title}>Contact me</h2>
                 <div className={s.contactsGroup}>
                     <form action="#">
-                        <div className={s.formInputName}>
-                            <label htmlFor="name">
-                                Name
-                                <input type="text" id="name" />
-                            </label>
-                        </div>
-                        <div className={s.formInputEmail}>
-                            <label htmlFor="email">
-                                Email
-                                <input type="email" id="email" />
-                            </label>
-                        </div>
-                        <div className={s.formInputMessage}>
-                            <label htmlFor="message">
-                                Message<textarea id="message"></textarea>
-                            </label>
-                        </div>
+                        <label htmlFor="name">
+                            Name
+                            <input type="text" id="name" />
+                        </label>
+                        <label htmlFor="email">
+                            Email
+                            <input type="email" id="email" />
+                        </label>
+                        <label htmlFor="message">
+                            Message<textarea id="message"></textarea>
+                        </label>
                         <button className={s.formSubmitButton} type="submit">
                             Send
                         </button>
