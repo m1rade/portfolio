@@ -1,8 +1,8 @@
 import React from "react";
+import sContainer from "common/styles/Container.module.css";
 import s from "./Contacts.module.css";
-import sContainer from "../../common/styles/Container.module.css";
 
-const Contacts = () => {
+export const Contacts = () => {
     return (
         <section className={s.block}>
             <div className={`${s.container} ${sContainer.container}`}>
@@ -29,5 +29,3 @@ const Contacts = () => {
         </section>
     );
 };
-
-export default Contacts;

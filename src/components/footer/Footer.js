@@ -1,10 +1,10 @@
 import React from "react";
 import s from "./Footer.module.css";
 
-const Footer = () => {
+export const Footer = () => {
     return (
-        <footer class={s.footerContainer}>
-            <div class={s.row}>
+        <footer className={s.footerContainer}>
+            <div className={s.row}>
                 <h3 className={s.footerLogo}>Footer Logo</h3>
                 <ul className={s.links}>
                     <li>Github</li>
@@ -18,5 +18,3 @@ const Footer = () => {
         </footer>
     );
 };
-
-export default Footer;

@@ -2,7 +2,7 @@ import React from "react";
 import s from "./Project.module.css";
 import sCard from "../../../common/styles/Card.module.css";
 
-const Project = (props) => {
+export const Project = (props) => {
     return (
         <div className={sCard.container}>
             <div className={s.pictureContainer}>
@@ -13,5 +13,3 @@ const Project = (props) => {
         </div>
     );
 };
-
-export default Project;

@@ -1,8 +1,8 @@
 import React from "react";
 import s from "./Main.module.css";
-import sContainer from "../../common/styles/Container.module.css"
+import sContainer from "common/styles/Container.module.css"
 
-const Main = () => {
+export const Main = () => {
     return (
         <section className={s.block}>
             <div className={sContainer.container}>
@@ -16,5 +16,3 @@ const Main = () => {
         </section>
     );
 };
-
-export default Main;
