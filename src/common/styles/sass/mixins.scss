@@ -1,0 +1,12 @@
+@mixin text($fontFamily, $fontSize, $lineHeight, $fontWeight) {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-weight: $fontWeight;
+}
+
+@mixin toCenterImage() {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
