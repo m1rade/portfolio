@@ -1,3 +1,5 @@
+@import "./common/styles/sass/variables.scss";
+
 * {
     box-sizing: border-box;
 }
@@ -9,11 +11,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    background-color: #1f1f1f;
-    color: #fff;
-    scroll-behavior: smooth;
-
-    /* primary-color: #28e98c */
+    background-color: $bgColor;
+    color: $textColor;
 }
 
 code {

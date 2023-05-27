@@ -1,0 +1,63 @@
+@import "common/styles/sass/variables.scss";
+@import "common/styles/sass/mixins.scss";
+
+.projectItem {
+    margin-bottom: 60px;
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+
+    .projectImage {
+        border-radius: 30px;
+        position: relative;
+        margin-bottom: 30px;
+
+        @include toCenterImage();
+
+        height: 350px;
+        position: relative;
+
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+
+        a {
+            position: relative;
+            z-index: 1;
+
+            width: 100%;
+            height: 100%;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 30px;
+            opacity: 0;
+            transition: 0.3s;
+        }
+    }
+    h2 {
+        @include text (("Inter", sans-serif), 24px, 1.2, 300);
+        margin: 0;
+    }
+    .projectTitle a {
+        color: inherit;
+        border-bottom: 1px solid transparent;
+        transition: 0.3s;
+    }
+    &:hover > .projectTitle a {
+        border-bottom: 1px solid $textColor;
+        transition: 0.3s;
+    }
+    &:hover > .projectImage::before {
+        opacity: 0.1;
+        background-color: $bgColor;
+        transition: 0.3s;
+    }
+}
