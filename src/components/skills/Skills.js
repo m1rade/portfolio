@@ -1,14 +1,15 @@
-import React from "react";
-import sContainer from "common/styles/Container.module.css";
-import sWrapper from "common/styles/WrapperForCards.module.css";
-import s from "./Skills.module.css";
+import sContainer from "common/styles/container.module.css";
+import sWrapper from "common/styles/wrapperForCards.module.css";
 import { Skill } from "components/skills/skill";
+import React from "react";
+import sSection from "common/styles/section.module.css";
+import { Title } from "common/components";
 
 export const Skills = () => {
     return (
-        <section className={s.block}>
+        <section className={sSection.sectionBlock}>
             <div className={`${sWrapper.container} ${sContainer.container}`}>
-                <h2 className={sWrapper.title}>Skills</h2>
+                <Title title="My" title2="Skills" />
                 <div className={sWrapper.wrapper}>
                     <Skill
                         title={"JavaScript"}

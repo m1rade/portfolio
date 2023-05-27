@@ -1,5 +1,4 @@
-.block {
-    background-color: rgb(26, 119, 218);
+.mainSection {
     height: 100vh;
 }
 
@@ -17,7 +16,7 @@
     border: 1px solid;
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-device-width: 1001px) {
     .text {
         text-align: center;
     }

@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Skill.module.css";
-import sCard from "common/styles/Card.module.css";
+import sCard from "common/styles/card.module.css";
 
 export const Skill = props => {
     return (

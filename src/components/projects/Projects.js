@@ -1,14 +1,15 @@
-import React from "react";
-import sContainer from "common/styles/Container.module.css";
-import sWrapper from "common/styles/WrapperForCards.module.css";
+import { Title } from "common/components";
+import sContainer from "common/styles/container.module.css";
+import sSection from "common/styles/section.module.css";
+import sWrapper from "common/styles/wrapperForCards.module.css";
 import { Project } from "components/projects/Project";
-import s from "./Projects.module.css";
+import React from "react";
 
 export const Projects = () => {
     return (
-        <section className={s.block}>
+        <section className={sSection.sectionBlock}>
             <div className={`${sWrapper.container} ${sContainer.container}`}>
-                <h2 className={sWrapper.title}>My projects</h2>
+                <Title title="My" title2="Projects" />
                 <div className={sWrapper.wrapper}>
                     <Project
                         title={"Todo List"}
@@ -16,18 +17,6 @@ export const Projects = () => {
                     />
                     <Project
                         title={"Social Network"}
-                        description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."}
-                    />
-                    <Project
-                        title={"Todo List"}
-                        description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."}
-                    />
-                    <Project
-                        title={"Social Network"}
-                        description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."}
-                    />
-                    <Project
-                        title={"Todo List"}
                         description={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, natus."}
                     />
                 </div>

@@ -1,8 +1,8 @@
+import sCard from "common/styles/card.module.css";
 import React from "react";
 import s from "./Project.module.css";
-import sCard from "../../../common/styles/Card.module.css";
 
-export const Project = (props) => {
+export const Project = props => {
     return (
         <div className={sCard.container}>
             <div className={s.pictureContainer}>

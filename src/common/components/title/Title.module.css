@@ -1,0 +1,15 @@
+.title {
+    margin-bottom: 33px;
+}
+
+.title h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.title span {
+    color: #28e98c;
+}

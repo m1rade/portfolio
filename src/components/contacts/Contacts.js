@@ -1,12 +1,14 @@
+import sContainer from "common/styles/container.module.css";
+import sSection from "common/styles/section.module.css";
 import React from "react";
-import sContainer from "common/styles/Container.module.css";
 import s from "./Contacts.module.css";
+import { Title } from "common/components";
 
 export const Contacts = () => {
     return (
-        <section className={s.block}>
+        <section className={sSection.sectionBlock}>
             <div className={`${s.container} ${sContainer.container}`}>
-                <h2 className={s.title}>Contact me</h2>
+                <Title title="Get in" title2="Touch" />
                 <div className={s.contactsGroup}>
                     <form action="#">
                         <label htmlFor="name">
