@@ -39,25 +39,62 @@
             right: 0;
             border-radius: 30px;
             opacity: 0;
-            transition: 0.3s;
+            transition: .3s;
+        }
+
+        .techList {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: flex-end;
+
+            .tech {
+                display: block;
+                font-family: "inter", sans-serif;
+                font-size: 14px;
+
+                @include changeTechColor(#fff, $bgColor);
+
+                padding: 7px 20px;
+                border-radius: 19px;
+
+                transition: .3s;
+            }
         }
     }
+
     h2 {
         @include text (("Inter", sans-serif), 24px, 1.2, 300);
         margin: 0;
     }
+
     .projectTitle a {
         color: inherit;
         border-bottom: 1px solid transparent;
-        transition: 0.3s;
+        transition: .3s;
     }
-    &:hover > .projectTitle a {
+
+    &:hover>.projectTitle a {
         border-bottom: 1px solid $textColor;
-        transition: 0.3s;
+        transition: .3s;
     }
-    &:hover > .projectImage::before {
+
+    &:hover>.projectImage::before {
         opacity: 0.1;
         background-color: $bgColor;
-        transition: 0.3s;
+        transition: .3s;
+    }
+
+    &:hover>.projectImage>.techList>.tech {
+        @include changeTechColor($bgColor, #fff);
+        transition: .3s;
     }
 }

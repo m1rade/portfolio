@@ -10,3 +10,8 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+@mixin changeTechColor($bgColor, $color) {
+    background-color: $bgColor;
+    color: $color;
+}

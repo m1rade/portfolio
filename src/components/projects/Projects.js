@@ -21,14 +21,17 @@ export const Projects = () => {
             <div className={`${sWrapper.container} ${sContainer.container}`}>
                 <Title title="My" title2="Projects" />
                 <div className={sWrapper.wrapper}>
-                    <Project 
-                        title={"To-do List"} 
-                        style={styleTodo} link="https://it-incubator-to-do-list.vercel.app" 
+                    <Project
+                        title={"To-do List"}
+                        style={styleTodo}
+                        link="https://it-incubator-to-do-list.vercel.app"
+                        tech={["ReduxToolkit", "React Functional component"]}
                     />
                     <Project
                         title={"Social Network"}
                         style={styleSocial}
                         link="https://github.com/m1rade/social-network"
+                        tech={["React Class component", "Redux"]}
                     />
                 </div>
             </div>
