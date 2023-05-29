@@ -3,6 +3,7 @@
 
 .container {
     margin-bottom: 40px;
+    width: 21%;
 
     @media screen and (max-device-width: 741px) {
         margin-bottom: 20px;
@@ -14,29 +15,34 @@
         align-items: center;
 
         margin-bottom: 20px;
-        padding: 54px 0 48px 0;
+        padding: 44px 0 44px 0;
 
-        border: 2px solid;
-        border-color: $borderColor;
+        border: 2px solid $borderColor;
         border-radius: 85px;
 
         transition: .3s;
 
         .skillIcon {
-            width: 70px;
-            height: 70px;
+            width: 90px;
+            height: 120px;
             color: $primaryColor;
-            // opacity: 0.5;
-        }
-    }
+            opacity: 0.8;
 
-    &:hover {
-        border-color: $primaryColor;
+            transition: .3s;
+        }
     }
 
     h3 {
         margin: 0;
         @include text(("Inter", sans-serif), 20px, 1.2, 300);
         text-align: center;
+    }
+
+    &:hover > .inner {
+        border-color: $primaryColor;
+    }
+
+    &:hover > .inner > .skillIcon {
+        opacity: 1;
     }
 }

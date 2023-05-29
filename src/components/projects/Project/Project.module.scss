@@ -84,17 +84,14 @@
 
     &:hover>.projectTitle a {
         border-bottom: 1px solid $textColor;
-        transition: .3s;
     }
 
     &:hover>.projectImage::before {
         opacity: 0.1;
         background-color: $bgColor;
-        transition: .3s;
     }
 
     &:hover>.projectImage>.techList>.tech {
         @include changeTechColor($bgColor, #fff);
-        transition: .3s;
     }
 }
