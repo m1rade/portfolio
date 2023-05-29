@@ -38,11 +38,11 @@
         text-align: center;
     }
 
-    &:hover > .inner {
+    &:hover>.inner {
         border-color: $primaryColor;
     }
 
-    &:hover > .inner > .skillIcon {
+    &:hover>.inner>.skillIcon {
         opacity: 1;
     }
 }
