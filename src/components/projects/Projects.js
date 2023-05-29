@@ -3,9 +3,9 @@ import todoImage from "assets/image/todolist.jpg";
 import { Subtitle, Title } from "common/components";
 import sContainer from "common/styles/container.module.css";
 import sSection from "common/styles/section.module.css";
-import sWrapper from "common/styles/wrapperForCards.module.css";
 import { Project } from "components/projects/Project";
 import React from "react";
+import s from "./Projects.module.scss";
 
 export const Projects = () => {
     const styleTodo = {
@@ -18,10 +18,10 @@ export const Projects = () => {
 
     return (
         <section className={sSection.sectionBlock}>
-            <div className={`${sWrapper.container} ${sContainer.container}`}>
+            <div className={`${s.projectsContainer} ${sContainer.container}`}>
                 <Subtitle subtitle="portfolio" />
                 <Title title="My" title2="Projects" />
-                <div className={sWrapper.inner}>
+                <div className={s.inner}>
                     <Project
                         title={"To-do List"}
                         style={styleTodo}

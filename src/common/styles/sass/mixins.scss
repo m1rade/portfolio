@@ -15,3 +15,11 @@
     background-color: $bgColor;
     color: $color;
 }
+
+@mixin displayFlex($display: flex, $justifyContent: center, $alignItems: center, $flexDir: row, $flexWrap: no-wrap) {
+    display: $display;
+    flex-direction: $flexDir;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-wrap: $flexWrap;
+}
