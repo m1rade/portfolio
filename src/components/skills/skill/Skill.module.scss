@@ -1,0 +1,42 @@
+@import "common/styles/sass/variables.scss";
+@import "common/styles/sass/mixins.scss";
+
+.container {
+    margin-bottom: 40px;
+
+    @media screen and (max-device-width: 741px) {
+        margin-bottom: 20px;
+    }
+
+    .inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 20px;
+        padding: 54px 0 48px 0;
+
+        border: 2px solid;
+        border-color: $borderColor;
+        border-radius: 85px;
+
+        transition: .3s;
+
+        .skillIcon {
+            width: 70px;
+            height: 70px;
+            color: $primaryColor;
+            // opacity: 0.5;
+        }
+    }
+
+    &:hover {
+        border-color: $primaryColor;
+    }
+
+    h3 {
+        margin: 0;
+        @include text(("Inter", sans-serif), 20px, 1.2, 300);
+        text-align: center;
+    }
+}

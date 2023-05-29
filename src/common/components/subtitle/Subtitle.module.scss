@@ -1,0 +1,17 @@
+@import "common/styles/sass/variables.scss";
+@import "common/styles/sass/mixins.scss";
+
+.subtitleBox {
+    border: 1px solid $borderColor;
+    padding: 9px 20px;
+    border-radius: 30px;
+    margin-bottom: 13px;
+    align-self: flex-start;
+
+    h4 {
+        @include text (("inter", sans-serif), 12px, 1.2, 300);
+        text-transform: uppercase;
+
+        margin: 0;
+    }
+}

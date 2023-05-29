@@ -16,13 +16,13 @@
     border: 1px solid;
 }
 
-@media screen and (max-device-width: 1001px) {
+@media screen and (max-width: 1001px) {
     .text {
         text-align: center;
     }
 }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
     .photo {
         width: 200px;
         height: 300px;
