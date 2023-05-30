@@ -9,7 +9,7 @@
     position: relative;
 
     h2 {
-        @include text(("Inter", sans-serif), 48px, 60px, 300);
+        @include text(48px, 60px, 300);
         margin: 0;
     }
 

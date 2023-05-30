@@ -34,7 +34,7 @@
 
     h3 {
         margin: 0;
-        @include text(("Inter", sans-serif), 20px, 1.2, 300);
+        @include text(20px, 1.2, 300);
         text-align: center;
     }
 

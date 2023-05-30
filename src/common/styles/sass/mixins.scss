@@ -1,5 +1,5 @@
-@mixin text($fontFamily, $fontSize, $lineHeight, $fontWeight) {
-    font-family: $fontFamily;
+@mixin text($fontSize, $lineHeight, $fontWeight) {
+    font-family: "Inter", sans-serif;
     font-size: $fontSize;
     line-height: $lineHeight;
     font-weight: $fontWeight;

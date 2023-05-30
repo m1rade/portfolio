@@ -9,7 +9,7 @@
     align-self: flex-start;
 
     h4 {
-        @include text (("inter", sans-serif), 12px, 1.2, 300);
+        @include text (12px, 1.2, 300);
         text-transform: uppercase;
 
         margin: 0;
