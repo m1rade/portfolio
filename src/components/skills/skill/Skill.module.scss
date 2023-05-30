@@ -3,19 +3,10 @@
 
 .container {
     margin-bottom: 40px;
-    // width: 21%;
     width: 166px;
-
-    @media screen and (max-width: 1024px) {
-        // width: 31%;
-    }
 
     @media screen and (max-width: 741px) {
         width: 31%;
-    }
-
-    @media screen and (max-width: 576px) {
-        width: 50%;
     }
 
     .inner {
