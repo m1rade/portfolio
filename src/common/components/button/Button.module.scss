@@ -17,6 +17,7 @@
     transition: .3s;
 
     &:hover {
+        cursor: pointer;
         background: none;
         color: $primaryColor;
 

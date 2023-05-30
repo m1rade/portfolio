@@ -15,10 +15,17 @@ body {
     color: $textColor;
 }
 
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
