@@ -1,8 +1,8 @@
 import socialImage from "assets/image/social-network.jpg";
 import todoImage from "assets/image/todolist.jpg";
 import { Subtitle, Title } from "common/components";
-import sContainer from "common/styles/container.module.css";
-import sSection from "common/styles/section.module.css";
+import sContainer from "common/styles/container.module.scss";
+import sSection from "common/styles/section.module.scss";
 import { Project } from "components/projects/Project";
 import React from "react";
 import s from "./Projects.module.scss";

@@ -1,6 +1,6 @@
 import { Subtitle, Title } from "common/components";
-import sContainer from "common/styles/container.module.css";
-import sSection from "common/styles/section.module.css";
+import sContainer from "common/styles/container.module.scss";
+import sSection from "common/styles/section.module.scss";
 import { Skill } from "components/skills/skill";
 import React from "react";
 import { SiCss3, SiHtml5, SiJavascript, SiMui, SiReact, SiRedux, SiTypescript } from "react-icons/si";

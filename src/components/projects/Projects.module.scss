@@ -1,10 +1,10 @@
 @import "common/styles/sass/mixins.scss";
 
 .projectsContainer {
-    @include displayFlex(flex, flex-start, center, column, wrap);
+    @include displayFlex(flex-start, center, column, wrap);
 
     .inner {
-        @include displayFlex(flex, space-evenly, $flexWrap: wrap);
+        @include displayFlex(space-evenly, $flexWrap: wrap);
         gap: 1rem;
 
         border: 1px solid;
