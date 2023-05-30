@@ -9,14 +9,14 @@ export const Main = () => {
     return (
         <section className={sSection.sectionBlock}>
             <div className={`${sContainer.container} ${s.mainContainer}`}>
-                <Subtitle subtitle="Introduction" icon={<HiHome />} />
+                <Subtitle subtitle="Introduce" icon={<HiHome />} />
                 <div className={s.innerContent}>
                     <div className={s.text}>
-                        <span>Hi There!</span>
-                        <h1>I'm Golysheva Laura</h1>
-                        <p>Frontend Developer</p>
+                        <h1>
+                            Say Hi from <span> Golysheva Laura,</span> a Frontend Web Developer
+                        </h1>
+                        <p>I code beautifully simple things and i love what i do. Just simple like that!</p>
                     </div>
-                    <div className={s.photo}></div>
                 </div>
             </div>
         </section>
