@@ -1,4 +1,4 @@
-import { Subtitle, Title } from "common/components";
+import { Button, Subtitle, Title } from "common/components";
 import sContainer from "common/styles/container.module.scss";
 import sSection from "common/styles/section.module.scss";
 import React from "react";
@@ -24,9 +24,9 @@ export const Contacts = () => {
                         <label htmlFor="message">
                             Message<textarea id="message"></textarea>
                         </label>
-                        <button className={s.formSubmitButton} type="submit">
-                            Send
-                        </button>
+                        <Button type="submit">
+                            Send message
+                        </Button>
                     </form>
                 </div>
             </div>

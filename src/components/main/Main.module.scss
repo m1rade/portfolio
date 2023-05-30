@@ -53,4 +53,23 @@
             }
         }
     }
+
+    .buttonWrapper {
+        margin: 15px 15px 15px auto;
+        align-self: flex-end;
+    }
+    
+    .buttonClass {
+        background: none;
+        color: $primaryColor;
+
+        transition: .3s;
+
+        &:hover {
+            background: $primaryColor;
+            color: #000;
+
+            transition: .3s;
+        }
+    }
 }

@@ -16,8 +16,8 @@
     color: $color;
 }
 
-@mixin displayFlex($justifyContent: flex-start, $alignItems: flex-start, $flexDir: row, $flexWrap: nowrap) {
-    display: flex;
+@mixin displayFlex($justifyContent: flex-start, $alignItems: flex-start, $flexDir: row, $flexWrap: nowrap, $display: flex) {
+    display: $display;
     flex-direction: $flexDir;
     justify-content: $justifyContent;
     align-items: $alignItems;

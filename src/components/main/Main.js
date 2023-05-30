@@ -1,4 +1,4 @@
-import { Subtitle } from "common/components";
+import { Button, Subtitle } from "common/components";
 import sContainer from "common/styles/container.module.scss";
 import sSection from "common/styles/section.module.scss";
 import React from "react";
@@ -18,6 +18,11 @@ export const Main = () => {
                         <p>I code beautifully simple things and i love what i do. Just simple like that!</p>
                     </div>
                 </div>
+                <Button
+                    wrapperClass={s.buttonWrapper}
+                    className={s.buttonClass}>
+                    Download CV
+                </Button>
             </div>
         </section>
     );
