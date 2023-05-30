@@ -8,7 +8,7 @@ import s from "./Main.module.scss";
 export const Main = () => {
     return (
         <section className={sSection.sectionBlock}>
-            <div className={`${sContainer.container} ${s.mainContainer}`}>
+            <div className={`${sContainer.custom} ${s.mainContainer}`}>
                 <Subtitle subtitle="Introduce" icon={<HiHome />} />
                 <div className={s.innerContent}>
                     <div className={s.text}>

@@ -8,27 +8,33 @@ import s from "./Contacts.module.scss";
 export const Contacts = () => {
     return (
         <section className={sSection.sectionBlock}>
-            <div className={`${s.contactsContainer} ${sContainer.container}`}>
+            <div className={`${s.container} ${sContainer.custom}`}>
                 <Subtitle subtitle="Contact" icon={<FaAddressCard />} />
                 <Title title="Get in" title2="Touch" />
-                <div className={s.contactsGroup}>
-                    <form action="#">
-                        <label htmlFor="name">
-                            Name
-                            <input type="text" id="name" />
+                <h3>Send me a note</h3>
+                <form action="#" className={s.group}>
+                    <div className={s.field}>
+                        <label htmlFor="full-name">
+                            Full name <sup>*</sup>
                         </label>
+                        <input type="text" id="full-name" placeholder="Your full name" />
+                    </div>
+                    <div className={s.field}>
                         <label htmlFor="email">
-                            Email
-                            <input type="email" id="email" />
+                            Email <sup>*</sup>
                         </label>
+                        <input type="email" id="email" placeholder="Your email address" />
+                    </div>
+                    <div className={s.field}>
                         <label htmlFor="message">
-                            Message<textarea id="message"></textarea>
+                            Message <sup>*</sup>
                         </label>
-                        <Button type="submit">
-                            Send message
-                        </Button>
-                    </form>
-                </div>
+                        <textarea id="message" placeholder="Write your message here ..."></textarea>
+                    </div>
+                    <div className={s.buttonWrapper}>
+                        <Button type="submit">Send message</Button>
+                    </div>
+                </form>
             </div>
         </section>
     );
