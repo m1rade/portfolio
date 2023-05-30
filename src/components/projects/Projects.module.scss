@@ -1,9 +1,9 @@
 @import "common/styles/sass/mixins.scss";
 
-.projectsContainer {
+.container {
     @include displayFlex(flex-start, center, column, wrap);
 
-    .inner {
+    .innerContent {
         @include displayFlex(space-evenly, $flexWrap: wrap);
         gap: 1rem;
 

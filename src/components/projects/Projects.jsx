@@ -18,11 +18,11 @@ export const Projects = () => {
     };
 
     return (
-        <section className={sSection.sectionBlock}>
-            <div className={`${s.projectsContainer} ${sContainer.custom}`}>
+        <section className={sSection.block}>
+            <div className={`${s.container} ${sContainer.custom}`}>
                 <Subtitle subtitle="portfolio" icon={<FaGripVertical />} />
                 <Title title="My" title2="Projects" />
-                <div className={s.inner}>
+                <div className={s.innerContent}>
                     <Project
                         title={"To-do List"}
                         style={styleTodo}

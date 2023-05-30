@@ -9,11 +9,11 @@ import s from "./Skills.module.scss";
 
 export const Skills = () => {
     return (
-        <section className={sSection.sectionBlock}>
-            <div className={`${s.skillsContainer} ${sContainer.custom}`}>
+        <section className={sSection.block}>
+            <div className={`${s.container} ${sContainer.custom}`}>
                 <Subtitle subtitle="My Skills" icon={<FaGraduationCap />} />
                 <Title title="Tech" title2="Stack" />
-                <div className={s.inner}>
+                <div className={s.innerContent}>
                     <Skill title="JavaScript">
                         <SiJavascript />
                     </Skill>

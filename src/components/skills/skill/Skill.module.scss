@@ -22,7 +22,7 @@
 
         transition: .3s;
 
-        .skillIcon {
+        .icon {
             width: 90px;
             height: 120px;
             color: $primaryColor;
@@ -44,7 +44,7 @@
         transition: .3s;
     }
 
-    &:hover>.inner>.skillIcon {
+    &:hover>.inner>.icon {
         opacity: 1;
 
         transition: .3s;

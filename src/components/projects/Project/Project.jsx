@@ -3,8 +3,8 @@ import s from "./Project.module.scss";
 
 export const Project = props => {
     return (
-        <div className={s.projectItem}>
-            <div className={s.projectImage} style={props.style}>
+        <div className={s.item}>
+            <div className={s.image} style={props.style}>
                 <a href={props.link} target="_blank" rel="noreferrer"></a>
                 <ul className={s.techList}>
                     {props.tech.map((t, i) => {
@@ -16,7 +16,7 @@ export const Project = props => {
                     })}
                 </ul>
             </div>
-            <h2 className={s.projectTitle}>
+            <h2 className={s.title}>
                 <a href={props.link} target="_blank" rel="noreferrer">
                     {props.title}
                 </a>

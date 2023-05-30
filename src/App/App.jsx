@@ -10,7 +10,6 @@ export const App = () => {
             <Skills />
             <Projects />
             <Contacts />
-            <Footer />
         </>
     );
 };

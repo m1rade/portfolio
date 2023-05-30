@@ -7,7 +7,7 @@ import s from "./Contacts.module.scss";
 
 export const Contacts = () => {
     return (
-        <section className={sSection.sectionBlock}>
+        <section className={sSection.block}>
             <div className={`${s.container} ${sContainer.custom}`}>
                 <Subtitle subtitle="Contact" icon={<FaAddressCard />} />
                 <Title title="Get in" title2="Touch" />

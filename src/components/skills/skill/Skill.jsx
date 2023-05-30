@@ -6,7 +6,7 @@ export const Skill = props => {
     return (
         <div className={s.container}>
             <div className={s.inner}>
-                <IconContext.Provider value={{ className: s.skillIcon }}>
+                <IconContext.Provider value={{ className: s.icon }}>
                     {props.children}
                 </IconContext.Provider>
             </div>

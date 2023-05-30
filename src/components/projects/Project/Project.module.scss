@@ -1,14 +1,14 @@
 @import "common/styles/sass/variables.scss";
 @import "common/styles/sass/mixins.scss";
 
-.projectItem {
+.item {
     margin-bottom: 60px;
     width: 350px;
 
     display: flex;
     flex-direction: column;
 
-    .projectImage {
+    .image {
         border-radius: 30px;
         position: relative;
         margin-bottom: 30px;
@@ -76,26 +76,26 @@
         margin: 0;
     }
 
-    .projectTitle a {
+    .title a {
         color: inherit;
         border-bottom: 1px solid transparent;
         transition: .5s;
     }
 
-    &:hover>.projectTitle a {
+    &:hover>.title a {
         border-bottom: 1px solid $textColor;
 
         transition: .5s;
     }
 
-    &:hover>.projectImage::before {
+    &:hover>.image::before {
         opacity: 0.1;
         background-color: $bgColor;
 
         transition: .5s;
     }
 
-    &:hover>.projectImage>.techList>.tech {
+    &:hover>.image>.techList>.tech {
         @include changeTechColor($bgColor, $textColor);
 
         transition: .5s;
