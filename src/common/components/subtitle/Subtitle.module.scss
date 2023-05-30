@@ -13,5 +13,10 @@
         text-transform: uppercase;
 
         margin: 0;
+
+        & .icon {
+            padding-right: 10px;
+            font-size: 14px;
+        }
     }
 }

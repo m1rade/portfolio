@@ -1,6 +1,8 @@
 @import "common/styles/sass/mixins.scss";
 
-.contactContainer {
+.contactsContainer {
+    @include displayFlex(flex-start, center, column, wrap);
+
     .contactsGroup {
         @include displayFlex($justifyContent: center);
 

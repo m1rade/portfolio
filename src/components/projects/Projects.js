@@ -5,6 +5,7 @@ import sContainer from "common/styles/container.module.scss";
 import sSection from "common/styles/section.module.scss";
 import { Project } from "components/projects/Project";
 import React from "react";
+import { FaGripVertical } from "react-icons/fa";
 import s from "./Projects.module.scss";
 
 export const Projects = () => {
@@ -19,7 +20,7 @@ export const Projects = () => {
     return (
         <section className={sSection.sectionBlock}>
             <div className={`${s.projectsContainer} ${sContainer.container}`}>
-                <Subtitle subtitle="portfolio" />
+                <Subtitle subtitle="portfolio" icon={<FaGripVertical />} />
                 <Title title="My" title2="Projects" />
                 <div className={s.inner}>
                     <Project

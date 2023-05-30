@@ -1,13 +1,15 @@
+import { Subtitle, Title } from "common/components";
 import sContainer from "common/styles/container.module.scss";
 import sSection from "common/styles/section.module.scss";
 import React from "react";
+import { FaAddressCard } from "react-icons/fa";
 import s from "./Contacts.module.scss";
-import { Title } from "common/components";
 
 export const Contacts = () => {
     return (
         <section className={sSection.sectionBlock}>
-            <div className={`${s.contactContainer} ${sContainer.container}`}>
+            <div className={`${s.contactsContainer} ${sContainer.container}`}>
+                <Subtitle subtitle="Contact" icon={<FaAddressCard />} />
                 <Title title="Get in" title2="Touch" />
                 <div className={s.contactsGroup}>
                     <form action="#">

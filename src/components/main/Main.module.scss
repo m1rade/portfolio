@@ -1,28 +1,30 @@
 @import "common/styles/sass/mixins.scss";
 
 .mainContainer {
-    @include displayFlex(space-around, center, $flexWrap: wrap);
-}
+    @include displayFlex($flexDir: column);
 
-.text {
-    background-color: white;
-    border: 1px solid;
-    width: 400px;
+    .innerContent {
+        @include displayFlex(space-around, center, $flexWrap: wrap);
 
-    @media screen and (max-width: 1001px) {
-        text-align: center;
-    }
-}
+        .text {
+            border: 1px solid;
+            width: 400px;
 
-.photo {
-    width: 300px;
-    height: 400px;
+            @media screen and (max-width: 1001px) {
+                text-align: center;
+            }
+        }
 
-    background-color: white;
-    border: 1px solid;
+        .photo {
+            width: 300px;
+            height: 400px;
 
-    @media screen and (max-width: 425px) {
-        width: 200px;
-        height: 300px;
+            border: 1px solid;
+
+            @media screen and (max-width: 425px) {
+                width: 200px;
+                height: 300px;
+            }
+        }
     }
 }
