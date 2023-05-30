@@ -40,9 +40,13 @@
 
     &:hover>.inner {
         border-color: $primaryColor;
+
+        transition: .3s;
     }
 
     &:hover>.inner>.skillIcon {
         opacity: 1;
+
+        transition: .3s;
     }
 }
