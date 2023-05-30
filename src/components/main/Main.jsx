@@ -15,7 +15,7 @@ export const Main = () => {
                         <h1>
                             Say Hi from <span>Golysheva Laura,</span> a Frontend Web Developer
                         </h1>
-                        <p>I code beautifully simple things and i love what i do. Just simple like that!</p>
+                        <p>I code beautifully simple things and I love what I do. Just simple like that!</p>
                     </div>
                 </div>
                 <div className={s.buttonWrapper}>
