@@ -18,11 +18,9 @@ export const Main = () => {
                         <p>I code beautifully simple things and i love what i do. Just simple like that!</p>
                     </div>
                 </div>
-                <Button
-                    wrapperClass={s.buttonWrapper}
-                    className={s.buttonClass}>
-                    Download CV
-                </Button>
+                <div className={s.buttonWrapper}>
+                    <Button className={s.buttonClass}>Download CV</Button>
+                </div>
             </div>
         </section>
     );

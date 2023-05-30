@@ -1,33 +1,30 @@
 @import "common/styles/sass/mixins.scss";
 @import "common/styles/sass/variables.scss";
 
-.wrapper {
+.styled {
+    background: $primaryColor;
+    color: #000;
 
-    .styled {
-        background: $primaryColor;
-        color: #000;
+    @include displayFlex(center, center, $display: inline-flex);
 
-        @include displayFlex(center, center, $display: inline-flex);
+    padding: 11px 58px 10px 58px;
+    border: 2px solid $primaryColor;
+    border-radius: 30px;
 
-        padding: 11px 58px 10px 58px;
-        border: 2px solid $primaryColor;
-        border-radius: 30px;
+    text-transform: uppercase;
+    text-align: center;
 
-        text-transform: uppercase;
-        text-align: center;
+    transition: .3s;
+
+    &:hover {
+        background: none;
+        color: $primaryColor;
 
         transition: .3s;
+    }
 
-        &:hover {
-            background: none;
-            color: $primaryColor;
-
-            transition: .3s;
-        }
-
-        .icon {
-            padding-top: 3px;
-            margin-right: 10px;
-        }
+    .icon {
+        padding-top: 3px;
+        margin-right: 10px;
     }
 }
