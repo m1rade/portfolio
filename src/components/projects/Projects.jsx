@@ -4,7 +4,7 @@ import { Subtitle, Title } from "common/components";
 import { navigation } from "common/routes";
 import sContainer from "common/styles/container.module.scss";
 import sSection from "common/styles/section.module.scss";
-import { Project } from "components/projects/Project";
+import { Project } from "components/projects/project";
 import React from "react";
 import { FaGripVertical } from "react-icons/fa";
 import s from "./Projects.module.scss";
