@@ -1,15 +1,17 @@
 import React from "react";
-import { Contacts, Header, Main, Projects, Skills } from "components";
+import { Contacts, Main, Nav, Projects, Skills } from "components";
 import "./App.css";
 
 export const App = () => {
     return (
         <>
-            <Header />
-            <Main />
-            <Skills />
-            <Projects />
-            <Contacts />
+            <Nav />
+            <main>
+                <Main />
+                <Skills />
+                <Projects />
+                <Contacts />
+            </main>
         </>
     );
 };

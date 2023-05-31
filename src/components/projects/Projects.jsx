@@ -1,6 +1,7 @@
 import socialImage from "assets/image/social-network.jpg";
 import todoImage from "assets/image/todolist.jpg";
 import { Subtitle, Title } from "common/components";
+import { navigation } from "common/routes";
 import sContainer from "common/styles/container.module.scss";
 import sSection from "common/styles/section.module.scss";
 import { Project } from "components/projects/Project";
@@ -18,7 +19,7 @@ export const Projects = () => {
     };
 
     return (
-        <section className={sSection.block}>
+        <section className={sSection.block} id={navigation.projects}>
             <div className={`${s.container} ${sContainer.custom}`}>
                 <Subtitle subtitle="portfolio" icon={<FaGripVertical />} />
                 <Title title="My" title2="Projects" />

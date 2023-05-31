@@ -1,0 +1,73 @@
+@import "common/styles/sass/variables";
+@import "common/styles/sass/mixins";
+
+.navbar {
+    position: fixed;
+    right: 35px;
+    top: 245px;
+    z-index: 10;
+
+    @include displayFlex(space-around, center, column);
+
+    border: 2px solid #575757;
+    border-radius: 30px;
+    height: 315px;
+
+    background: transparent;
+
+    @media screen and (max-width: 894px) {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+
+        padding: 0 7px;
+        
+        position: relative;
+        transition: .3s;
+        
+        .icon {
+            width: 20px;
+            height: 20px;
+            
+            color: $textColor;
+            opacity: 0.5;
+        }
+
+        span {
+            position: absolute;
+            z-index: 2;
+            right: 112%;
+
+            font-size: 14px;
+            background: #404042;
+            color: $textColor;
+            padding: 3px 8px;
+            border-radius: 4px;
+
+            transition: .3s;
+
+            &::after {
+                position: absolute;
+                content: '';
+                z-index: -1;
+
+                width: 10px;
+                height: 10px;
+                right: -3px;
+                top: 50%;
+                
+                background: #404042;
+                transform: rotate(54deg) skew(-8deg, -39deg);
+                margin-top: -5px;
+
+            }
+        }
+
+        &:hover>.icon {
+            color: $primaryColor;
+            opacity: 1;
+        }
+    }
+}
