@@ -1,6 +1,6 @@
 export const navigation = {
-    home: "home",
-    skills: "skills",
-    projects: "projects",
-    contacts: "contacts",
+    home: "Home",
+    skills: "Skills",
+    projects: "Projects",
+    contacts: "Contacts",
 };

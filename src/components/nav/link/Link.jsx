@@ -6,11 +6,11 @@ import s from "./Link.module.scss";
 export const Link = ({ navRoutes, children, ...respProps }) => {
     const [isVisible, setVisible] = useState(false);
 
-    const handleOnHoverLink = e => {
+    const handleOnHoverLink = () => {
         setVisible(true);
     };
 
-    const handleOnMouseLeave = e => {
+    const handleOnMouseLeave = () => {
         setVisible(false);
     };
     return (
