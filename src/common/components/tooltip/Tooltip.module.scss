@@ -1,0 +1,32 @@
+@import "common/styles/sass/variables";
+
+.tooltip {
+    position: absolute;
+    z-index: 2;
+    right: 112%;
+
+    font-size: 14px;
+    background: #404042;
+    color: $textColor;
+    opacity: 0.8;
+    padding: 3px 8px;
+    border-radius: 6px;
+
+    transition: .3s;
+
+    &::after {
+        position: absolute;
+        content: '';
+        z-index: -1;
+
+        width: 10px;
+        height: 10px;
+        right: -3px;
+        top: 50%;
+
+        background: #404042;
+        transform: rotate(54deg) skew(-8deg, -39deg);
+        margin-top: -5px;
+
+    }
+}
