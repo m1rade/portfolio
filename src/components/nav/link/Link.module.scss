@@ -1,0 +1,23 @@
+@import "common/styles/sass/variables";
+
+a {
+    text-decoration: none;
+
+    padding: 0 7px;
+
+    position: relative;
+    transition: .3s;
+
+    .icon {
+        width: 20px;
+        height: 20px;
+
+        color: $textColor;
+        opacity: 0.5;
+    }
+
+    &:hover>.icon {
+        color: $primaryColor;
+        opacity: 1;
+    }
+}
