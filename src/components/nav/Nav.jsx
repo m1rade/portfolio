@@ -15,9 +15,9 @@ const links = [
 export const Nav = () => {
     return (
         <div className={s.navbar}>
-            {links.map(l => {
+            {links.map((l, i) => {
                 return (
-                    <Link navRoutes={l.navlink}>
+                    <Link key={i} navRoutes={l.navlink}>
                         <l.icon />
                     </Link>
                 );
