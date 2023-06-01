@@ -3,7 +3,7 @@
 
 .container {
     border: 1px solid $borderColor;
-    border-radius: 30px;
+    border-radius: 20px;
     max-width: 485px;
     width: 100%;
     padding: 50px;
@@ -31,10 +31,10 @@
 
     .personalPhoto {
         margin-bottom: 46px;
-        
+
         img {
             max-width: 100%;
-            border-radius: 30px;
+            border-radius: 20px;
             @include toCenterImage();
 
             @media screen and (max-width: 1555px) {
@@ -73,25 +73,52 @@
             margin: 0 0 20px;
 
             li {
-                display: inline-block;
+                display: inline-flex;
                 margin-left: 10px;
+
+                a {
+                    border: 2px solid $borderColor;
+                    border-radius: 50%;
+                    padding: 12px 14px;
+
+                    transition: .3s;
+
+                    .icon {
+                        color: $secondaryTextColor;
+                        transition: .3s;
+                    }
+
+                    &:hover .icon {
+                        color: $primaryColor;
+                        transition: .3s;
+                    }
+
+                    &:hover {
+                        border-color: $primaryColor;
+                        transition: .3s;
+                    }
+                }
+
+
+
             }
         }
 
     }
 
-    .buttonWrapper {
-        align-items: center;
+    .buttonLink {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        color: inherit;
+        font-weight: inherit;
+        line-height: inherit;
         width: 100%;
-        height: 40px;
 
-        .buttonLink {
-            text-decoration: none;
-            margin: 0;
-            padding: 0;
-            color: inherit;
-            font-weight: inherit;
-            line-height: inherit;
+        .buttonWrapper {
+            align-items: center;
+            width: 100%;
+            height: 40px;
         }
     }
 }
