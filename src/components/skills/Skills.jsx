@@ -1,7 +1,6 @@
 import { Subtitle, Title } from "common/components";
 import { navigation } from "common/routes";
 import sContainer from "common/styles/container.module.scss";
-import sSection from "common/styles/section.module.scss";
 import { Skill } from "components/skills/skill";
 import React from "react";
 import { FaGraduationCap } from "react-icons/fa";
@@ -10,7 +9,7 @@ import s from "./Skills.module.scss";
 
 export const Skills = () => {
     return (
-        <section className={sSection.block} id={navigation.skills}>
+        <section className={s.sectionBlock} id={navigation.skills}>
             <div className={`${s.container} ${sContainer.custom}`}>
                 <Subtitle subtitle="My Skills" icon={<FaGraduationCap />} />
                 <Title title="Tech" title2="Stack" />

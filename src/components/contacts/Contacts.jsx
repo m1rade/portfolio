@@ -1,6 +1,5 @@
 import { Button, Subtitle, Title } from "common/components";
 import sContainer from "common/styles/container.module.scss";
-import sSection from "common/styles/section.module.scss";
 import React from "react";
 import { FaAddressCard } from "react-icons/fa";
 import s from "./Contacts.module.scss";
@@ -8,7 +7,7 @@ import { navigation } from "common/routes";
 
 export const Contacts = () => {
     return (
-        <section className={sSection.block} id={navigation.contacts}>
+        <section className={s.sectionBlock} id={navigation.contacts}>
             <div className={`${s.container} ${sContainer.custom}`}>
                 <Subtitle subtitle="Contact" icon={<FaAddressCard />} />
                 <Title title="Get in" title2="Touch" />

@@ -1,7 +1,10 @@
 @import "common/styles/sass/mixins.scss";
 @import "common/styles/sass/variables.scss";
 
-.container {
+.sectionBlock {
+    @include blockStyle();
+
+    .container {
     @include displayFlex($flexDir: column);
 
     .innerContent {
@@ -69,4 +72,4 @@
             transition: .3s;
         }
     }
-}
+}}

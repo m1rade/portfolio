@@ -23,3 +23,8 @@
     align-items: $alignItems;
     flex-wrap: $flexWrap;
 }
+
+@mixin blockStyle() {
+    min-height: 100vh;
+    padding: 68px 0;
+}

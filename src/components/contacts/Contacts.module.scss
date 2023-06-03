@@ -1,7 +1,10 @@
 @import "common/styles/sass/mixins.scss";
 @import "common/styles/sass/variables.scss";
 
-.container {
+.sectionBlock {
+    @include blockStyle();
+
+    .container {
     @include displayFlex(flex-start, flex-start, column, wrap);
 
     .group {
@@ -71,4 +74,4 @@
         @include text(24px, 1.2, 300);
         margin-bottom: 60px;
     }
-}
+}}

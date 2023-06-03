@@ -1,6 +1,9 @@
 @import "common/styles/sass/mixins.scss";
 
-.container {
+.sectionBlock {
+    @include blockStyle();
+
+    .container {
     @include displayFlex(flex-start, center, column, wrap);
 
     .innerContent {
@@ -9,4 +12,4 @@
 
         width: 100%;
     }
-}
+}}
