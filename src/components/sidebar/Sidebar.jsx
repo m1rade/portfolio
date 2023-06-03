@@ -38,7 +38,10 @@ export const Sidebar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://spotify.com/" target="_blank" rel="noreferrer">
+                        <a
+                            href="https://open.spotify.com/user/arctic_cola"
+                            target="_blank"
+                            rel="noreferrer">
                             <IconContext.Provider value={styledIcon}>
                                 <SiSpotify />
                             </IconContext.Provider>
