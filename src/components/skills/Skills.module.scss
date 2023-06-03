@@ -5,6 +5,7 @@
 
     .container {
     @include displayFlex(flex-start, center, column, wrap);
+    @include commonContainer();
 
     .innerContent {
         @include displayFlex(space-evenly, $flexWrap: wrap);

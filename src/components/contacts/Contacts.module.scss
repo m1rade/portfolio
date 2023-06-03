@@ -6,6 +6,7 @@
 
     .container {
     @include displayFlex(flex-start, flex-start, column, wrap);
+    @include commonContainer();
 
     .group {
         width: 100%;

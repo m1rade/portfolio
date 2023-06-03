@@ -28,3 +28,15 @@
     min-height: 100vh;
     padding: 68px 0;
 }
+
+@mixin commonContainer() {
+    height: 100%;
+    width: 81%;
+    margin: 0 auto;
+
+    padding: 0 15px;
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+    }
+}
