@@ -1,12 +1,11 @@
 @import "common/styles/sass/variables";
 
-a {
+.navlink {
     text-decoration: none;
 
     padding: 0 7px;
 
     position: relative;
-    transition: .3s;
 
     .icon {
         width: 20px;
@@ -19,5 +18,11 @@ a {
     &:hover>.icon {
         color: $primaryColor;
         opacity: 1;
+    }
+
+    .show {
+        opacity: 1;
+        visibility: visible;
+        transition: .3s ease-in-out;
     }
 }

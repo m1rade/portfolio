@@ -7,15 +7,17 @@ export const Link = ({ navRoutes, children, ...respProps }) => {
     const [isVisible, setVisible] = useState(false);
 
     const handleOnHoverLink = () => {
-        setVisible(true);
+        setVisible(!isVisible);
     };
 
-    const handleOnMouseLeave = () => {
-        setVisible(false);
-    };
     return (
-        <a href={"#" + navRoutes} {...respProps} onMouseEnter={handleOnHoverLink} onMouseLeave={handleOnMouseLeave}>
-            {isVisible && <Tooltip content={navRoutes} />}
+        <a
+            href={"#" + navRoutes}
+            className={s.navlink}
+            {...respProps}
+            onMouseEnter={handleOnHoverLink}
+            onMouseLeave={handleOnHoverLink}>
+            <Tooltip content={navRoutes} className={isVisible && s.show} />
             <IconContext.Provider value={{ className: s.icon }}>{children}</IconContext.Provider>
         </a>
     );
