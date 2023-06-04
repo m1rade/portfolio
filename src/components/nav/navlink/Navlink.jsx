@@ -19,7 +19,7 @@ export const Navlink = ({ navRoutes, children, ...respProps }) => {
             spy={true}
             smooth={true}
             offset={3}
-            duration={500}
+            duration={700}
             {...respProps}
             onMouseEnter={handleOnHoverLink}
             onMouseLeave={handleOnHoverLink}>
