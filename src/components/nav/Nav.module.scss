@@ -6,7 +6,7 @@
     top: 245px;
     z-index: 10;
 
-    @include displayFlex(space-around, center, column);
+    @include displayFlex(space-evenly, center, column);
 
     border: 2px solid #575757;
     border-radius: 30px;
