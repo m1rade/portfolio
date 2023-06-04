@@ -26,10 +26,11 @@
 
 @mixin blockStyle() {
     min-height: 100vh;
-    /* should adjust */
     padding: 68px 100px 68px 380px;
 
-    position: relative;
+    @media screen and (max-width: 1120px) {
+        padding: 0 15px;
+    }
 }
 
 @mixin commonContainer() {

@@ -29,6 +29,17 @@
         padding: 30px;
     }
 
+    @media screen and (max-width: 1120px) {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateY(40px);
+
+        min-width: 50%;
+        margin: auto;
+        margin-bottom: 70px;
+    }
+
     .personalPhoto {
         margin-bottom: 46px;
 

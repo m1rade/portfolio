@@ -5,6 +5,7 @@ import { IconContext } from "react-icons";
 import { AiFillGithub, AiOutlineInstagram } from "react-icons/ai";
 import { HiOutlineEnvelope } from "react-icons/hi2";
 import { SiCodewars, SiSpotify } from "react-icons/si";
+import { Link } from "react-scroll";
 import photo from "../../assets/image/me.jpg";
 import s from "./Sidebar.module.scss";
 
@@ -38,10 +39,7 @@ export const Sidebar = () => {
                         </a>
                     </li>
                     <li>
-                        <a
-                            href="https://open.spotify.com/user/arctic_cola"
-                            target="_blank"
-                            rel="noreferrer">
+                        <a href="https://open.spotify.com/user/arctic_cola" target="_blank" rel="noreferrer">
                             <IconContext.Provider value={styledIcon}>
                                 <SiSpotify />
                             </IconContext.Provider>
@@ -56,11 +54,11 @@ export const Sidebar = () => {
                     </li>
                 </ul>
             </div>
-            <a className={s.buttonLink} href={"#" + navigation.contacts}>
+            <Link className={s.buttonLink} to={navigation.contacts} spy={true} smooth={true} offset={4} duration={700}>
                 <Button className={s.buttonWrapper} icon={<HiOutlineEnvelope />}>
                     Hire me!
                 </Button>
-            </a>
+            </Link>
         </div>
     );
 };
