@@ -8,14 +8,14 @@
     width: 100%;
     padding: 50px;
 
-    // position: fixed;
-    position: relative;
-    // left: 20px;
-    left: 18px;
-    // top: 50%;
+    position: fixed;
+    // position: relative;
+    left: 35px;
+    // left: 18px;
     top: 0;
-    // transform: translateY(-50%);
-    transform: translate(100%, 5%);
+    // top: 0;
+    transform: translateY(10%);
+    // transform: translate(100%, 5%);
     z-index: 10;
 
     @include displayFlex(center, center, column, wrap);
