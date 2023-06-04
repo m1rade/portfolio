@@ -2,6 +2,7 @@
 
 .navlink {
     text-decoration: none;
+    cursor: pointer;
 
     padding: 0 7px;
 
@@ -24,5 +25,12 @@
         opacity: 1;
         visibility: visible;
         transition: .3s ease-in-out;
+    }
+}
+
+.active {
+    .icon {
+        color: $primaryColor;
+        opacity: 1;
     }
 }

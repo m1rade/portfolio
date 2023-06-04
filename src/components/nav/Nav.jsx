@@ -1,5 +1,5 @@
 import { navigation } from "common/routes";
-import { Link } from "components/nav/link";
+import { Navlink } from "components/nav/navlink";
 import React from "react";
 import { FaAddressCard, FaGraduationCap, FaGripVertical } from "react-icons/fa";
 import { HiHome } from "react-icons/hi";
@@ -17,9 +17,9 @@ export const Nav = () => {
         <div className={s.navbar}>
             {links.map((l, i) => {
                 return (
-                    <Link key={i} navRoutes={l.navlink}>
+                    <Navlink key={i} navRoutes={l.navlink}>
                         <l.icon />
-                    </Link>
+                    </Navlink>
                 );
             })}
         </div>

@@ -1,9 +1,10 @@
 import { Tooltip } from "common/components";
 import React, { useState } from "react";
 import { IconContext } from "react-icons";
-import s from "./Link.module.scss";
+import { Link } from "react-scroll";
+import s from "./Navlink.module.scss";
 
-export const Link = ({ navRoutes, children, ...respProps }) => {
+export const Navlink = ({ navRoutes, children, ...respProps }) => {
     const [isVisible, setVisible] = useState(false);
 
     const handleOnHoverLink = () => {
@@ -11,14 +12,19 @@ export const Link = ({ navRoutes, children, ...respProps }) => {
     };
 
     return (
-        <a
-            href={"#" + navRoutes}
+        <Link
             className={s.navlink}
+            activeClass={s.active}
+            to={navRoutes}
+            spy={true}
+            smooth={true}
+            offset={3}
+            duration={500}
             {...respProps}
             onMouseEnter={handleOnHoverLink}
             onMouseLeave={handleOnHoverLink}>
             <Tooltip content={navRoutes} className={isVisible && s.show} />
             <IconContext.Provider value={{ className: s.icon }}>{children}</IconContext.Provider>
-        </a>
+        </Link>
     );
 };
