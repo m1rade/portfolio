@@ -1,25 +1,5 @@
 @import "common/styles/sass/mixins";
 
 .navbar {
-    position: fixed;
-    right: 35px;
-    top: 245px;
-    z-index: 10;
-
-    @include displayFlex(space-evenly, center, column);
-
-    border: 2px solid #575757;
-    border-radius: 30px;
-    height: 315px;
-
-    background: transparent;
-
-    @media screen and (max-width: 768px) {
-        // max-width: 894px
-        display: none;
-    }
-
-    @media screen and (max-height: 530px) {
-        top: 85px;
-    }
+    position: relative;
 }

@@ -1,27 +1,23 @@
 import { navigation } from "common/routes";
-import { Navlink } from "components/nav/navlink";
+import { NavScrollbar } from "components/nav/nav-scrollbar";
+import { NavSidebar } from "components/nav/nav-sidebar";
 import React from "react";
 import { FaAddressCard, FaGraduationCap, FaGripVertical } from "react-icons/fa";
 import { HiHome } from "react-icons/hi";
 import s from "./Nav.module.scss";
 
 const links = [
-    { navlink: navigation.home, icon: HiHome },
-    { navlink: navigation.skills, icon: FaGraduationCap },
-    { navlink: navigation.projects, icon: FaGripVertical },
-    { navlink: navigation.contacts, icon: FaAddressCard },
+    { _id: "ui*(", navRoute: navigation.home, icon: HiHome },
+    { _id: "fqewrt", navRoute: navigation.skills, icon: FaGraduationCap },
+    { _id: "88fka1]r", navRoute: navigation.projects, icon: FaGripVertical },
+    { _id: "[]ad", navRoute: navigation.contacts, icon: FaAddressCard },
 ];
 
 export const Nav = () => {
     return (
         <div className={s.navbar}>
-            {links.map((l, i) => {
-                return (
-                    <Navlink key={i} navRoutes={l.navlink}>
-                        <l.icon />
-                    </Navlink>
-                );
-            })}
+            <NavScrollbar links={links} />
+            <NavSidebar links={links} />
         </div>
     );
 };
