@@ -7,7 +7,7 @@ export const App = () => {
         <>
             <Sidebar />
             <Nav />
-            <main>
+            <main className="main">
                 <Main />
                 <Skills />
                 <Projects />
