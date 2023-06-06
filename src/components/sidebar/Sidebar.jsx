@@ -13,7 +13,7 @@ export const Sidebar = () => {
     const styledIcon = { className: s.icon, size: "1.2em" };
 
     return (
-        <div className={s.container}>
+        <aside className={s.container}>
             <div className={s.personalPhoto}>
                 <img src={photo} alt="me" />
             </div>
@@ -59,6 +59,6 @@ export const Sidebar = () => {
                     Hire me!
                 </Button>
             </Link>
-        </div>
+        </aside>
     );
 };
