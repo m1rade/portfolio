@@ -1,37 +1,29 @@
 @import "common/styles/sass/mixins";
+@import "common/styles/sass/variables";
 
 .container {
-    background-color: rgb(88, 157, 47);
+    background-color: $sidebarMenuColor;
 
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    right: 0;
+    position: inherit;
+    z-index: inherit;
+    top: inherit;
+    right: inherit;
 
+    @include displayFlex(center, flex-start, column);
 
-    .burgerButton {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        top: 0;
-        right: 0;
-        margin: 50px 30px;
-        background-color: #000;
+    height: 100%;
+    width: 50%;
+    margin-left: auto;
+
+    @media screen and (min-width: 769px) {
+        display: none;
     }
 
     .items {
         width: 100%;
-        display: none;
-    }
+        height: 70%;
+        @include displayFlex(space-between, flex-start, column);
 
-    .showItems {
-        @include displayFlex(space-evenly, center, column);
-        height: 100vh;
-        width: 350px;
-        background-color: #1a420f;
-    }
-
-    @media screen and (min-width: 768px) {
-        display: none;
+        background-color: inherit;
     }
 }

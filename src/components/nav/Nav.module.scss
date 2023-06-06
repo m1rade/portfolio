@@ -1,5 +1,63 @@
 @import "common/styles/sass/mixins";
+@import "common/styles/sass/variables";
 
 .navbar {
-    position: relative;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+
+    .burgerButton {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 25px;
+        right: 25px;
+        z-index: 11;
+        background-color: transparent;
+        border: 1px solid $borderColor;
+        border-radius: 30px;
+
+        @include displayFlex(center, center, column, nowrap, inline-flex);
+        gap: 10px;
+        cursor: pointer;
+
+        @media screen and (min-width: 769px) {
+            display: none;
+        }
+
+        .line {
+            background: $textColor;
+            opacity: 0.8;
+            height: 2px;
+            width: 60%;
+
+            transition: all .4s ease-in-out;
+        }
+
+        .line1 {
+            transform: translate(1px, 8px) rotate(45deg);
+            transition: all .4s ease-in-out;
+        }
+
+        .line2 {
+            transform: translate(1px, -4px) rotate(-45deg);
+            transition: all .4s ease-in-out;
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 9;
+        background-color: $borderColor;
+        opacity: 0.5;
+    }
 }

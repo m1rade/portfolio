@@ -1,10 +1,10 @@
 @import "common/styles/sass/mixins";
 
 .items {
-    position: fixed;
+    position: inherit;
     right: 35px;
     top: 245px;
-    z-index: 10;
+    z-index: inherit;
 
     @include displayFlex(space-evenly, center, column);
 
@@ -15,7 +15,6 @@
     background: transparent;
 
     @media screen and (max-width: 768px) {
-        // max-width: 894px
         display: none;
     }
 

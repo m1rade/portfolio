@@ -9,7 +9,11 @@
 
     position: relative;
 
-    @include displayFlex(center, flex-start);
+    @include displayFlex(center, center);
+
+    @media screen and (max-width: 768px) {
+        padding: 40px calc(360px + (100vw - 768px) / 2) 40px 20px;
+    }
 
     .icon {
         width: 21px;
@@ -19,6 +23,12 @@
         opacity: 0.5;
 
         transition: opacity .3s ease, color .3s ease;
+
+        @media screen and (max-width: 768px) {
+            width: 31px;
+            height: 31px;
+
+        }
     }
 
     &:hover>.icon {
@@ -33,6 +43,7 @@
         margin-left: 15px;
         opacity: 0.5;
         color: $textColor;
+        @include text(18px, 1.2, 400);
 
         transition: opacity .3s ease;
     }
