@@ -2,7 +2,6 @@ import { Button, Subtitle } from "common/components";
 import { navigation } from "common/routes";
 import React from "react";
 import { HiHome } from "react-icons/hi";
-import { Fade } from "react-reveal";
 import s from "./Main.module.scss";
 
 export const Main = () => {
@@ -15,15 +14,12 @@ export const Main = () => {
                         <h1>
                             Say Hi from <span>Golysheva Laura,</span> a Frontend Web Developer
                         </h1>
-                        <Fade bottom duration={3000}>
-                            <p>I code beautifully simple things and I love what I do. Just simple like that!</p>
-                        </Fade>
+
+                        <p>I code beautifully simple things and I love what I do. Just simple like that!</p>
                     </div>
                 </div>
                 <div className={s.buttonWrapper}>
-                    <Fade bottom duration={3000}>
-                        <Button className={s.buttonClass}>Download CV</Button>
-                    </Fade>
+                    <Button className={s.buttonClass}>Download CV</Button>
                 </div>
             </div>
         </section>
