@@ -4,8 +4,8 @@
 .container {
     background-color: $sidebarMenuColor;
 
-    position: fixed;
-    z-index: 10;
+    position: inherit;
+    z-index: inherit;
     top: inherit;
     right: inherit;
 
@@ -14,6 +14,9 @@
     height: 100%;
     width: 50%;
     margin-left: auto;
+
+    transform: translateX(100%);
+    transition: transform .5s ease;
 
     @media screen and (min-width: 769px) {
         display: none;
@@ -26,4 +29,20 @@
 
         background-color: inherit;
     }
+}
+
+.show {
+    transform: translateY(0);
+    transition: all .5s ease;
+}
+
+.overlay {
+    position: fixed;
+    top: inherit;
+    right: inherit;
+    height: 100%;
+    width: 100%;
+    z-index: inherit;
+    background-color: $borderColor;
+    opacity: 0.5;
 }

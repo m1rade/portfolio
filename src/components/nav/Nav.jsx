@@ -21,14 +21,15 @@ export const Nav = () => {
     const handleCloseSidebarMenu = () => setShowMenu(false);
 
     return (
-        <nav className={s.navbar}>
-            <div className={s.burgerButton} onClick={handleShowMenu}>
-                <span className={showMenu ? `${s.line} ${s.line1}` : s.line}></span>
-                <span className={showMenu ? `${s.line} ${s.line2}` : s.line}></span>
-            </div>
-            <NavScrollbar links={links} />
-            {showMenu && <div className={s.overlay} onClick={handleCloseSidebarMenu}></div>}
-            {showMenu && <NavSidebar links={links} />}
-        </nav>
+        
+            <nav className={s.navbar}>
+                <div className={s.burgerButton} onClick={handleShowMenu}>
+                    <span className={showMenu ? `${s.line} ${s.line1}` : s.line}></span>
+                    <span className={showMenu ? `${s.line} ${s.line2}` : s.line}></span>
+                </div>
+                <NavScrollbar links={links} />
+                <NavSidebar links={links} showMenu={showMenu} close={handleCloseSidebarMenu} />
+            </nav>
+        
     );
 };
