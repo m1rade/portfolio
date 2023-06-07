@@ -5,7 +5,7 @@ export const Project = props => {
     return (
         <div className={s.item}>
             <div className={s.image} style={props.style}>
-                <a href={props.link} target="_blank" rel="noreferrer"></a>
+                <a href={props.link} target="_blank" rel="noreferrer"> </a>
                 <ul className={s.techList}>
                     {props.tech.map((t, i) => {
                         return (
