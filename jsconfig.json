@@ -3,8 +3,8 @@
         "module": "commonjs",
         "target": "es6",
         "baseUrl": "src",
-        "jsx": "react-jsx",
-        "allowJs": true,
+        "jsx": "react",
+        "allowJs": true
     },
     "include": ["src"],
     "exclude": ["node_modules"]
