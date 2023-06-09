@@ -10,6 +10,7 @@ export const Navlink = ({ navRoute, children, showTooltip, ...restProps }) => {
     const handleOnHoverLink = () => {
         setVisible(!isVisible);
     };
+    console.log(restProps.offset);
 
     return (
         <Link
@@ -18,8 +19,9 @@ export const Navlink = ({ navRoute, children, showTooltip, ...restProps }) => {
             to={navRoute}
             spy={true}
             smooth={true}
-            offset={3}
+            offset={restProps.offset}
             duration={700}
+            isDynamic={true}
             {...restProps}
             onMouseEnter={handleOnHoverLink}
             onMouseLeave={handleOnHoverLink}>

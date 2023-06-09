@@ -10,7 +10,7 @@ export const NavSidebar = ({ links, showMenu, close }) => {
                 <div className={s.items}>
                     {links.map((l, i) => {
                         return (
-                            <Navlink key={l._id} navRoute={l.navRoute} showTooltip={false}>
+                            <Navlink key={l._id} navRoute={l.navRoute} showTooltip={false} offset={-25}>
                                 <l.icon />
                             </Navlink>
                         );

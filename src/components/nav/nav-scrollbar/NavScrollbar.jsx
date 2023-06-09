@@ -7,7 +7,7 @@ export const NavScrollbar = props => {
         <div className={s.items}>
             {props.links.map((l, i) => {
                 return (
-                    <Navlink key={i} navRoute={l.navRoute} showTooltip={true}>
+                    <Navlink key={i} navRoute={l.navRoute} showTooltip={true} offset={-68}>
                         <l.icon />
                     </Navlink>
                 );
