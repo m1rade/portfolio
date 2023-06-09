@@ -1,6 +1,6 @@
 import socialImage from "assets/image/social-network.jpg";
 import todoImage from "assets/image/todolist.jpg";
-import { Subtitle, Title } from "common/components";
+import { FadeIn, Subtitle, Title } from "common/components";
 import { navigation } from "common/routes";
 import { Project } from "components/projects/project";
 import React from "react";
@@ -27,12 +27,16 @@ export const Projects = () => {
                         style={styleTodo}
                         link="https://it-incubator-to-do-list.vercel.app"
                         tech={["ReduxToolkit", "React Functional component"]}
+                        x={"180px"}
+                        y={"0px"}
                     />
                     <Project
                         title={"Social Network"}
                         style={styleSocial}
                         link="https://github.com/m1rade/social-network"
                         tech={["React Class component", "Redux"]}
+                        x={"-180px"}
+                        y={"0px"}
                     />
                 </div>
             </div>

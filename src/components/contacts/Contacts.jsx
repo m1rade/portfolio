@@ -1,4 +1,4 @@
-import { Button, Subtitle, Title } from "common/components";
+import { Button, FadeIn, Subtitle, Title } from "common/components";
 import React from "react";
 import { FaAddressCard } from "react-icons/fa";
 import s from "./Contacts.module.scss";
@@ -7,7 +7,7 @@ import { navigation } from "common/routes";
 export const Contacts = () => {
     return (
         <section className={s.sectionBlock} id={navigation.contacts}>
-            <div className={s.container}>
+            <FadeIn x={"0px"} y={"180px"} className={s.container}>
                 <Subtitle subtitle="Contact" icon={<FaAddressCard />} />
                 <Title title="Get in" title2="Touch" />
                 <h3>Send me a note</h3>
@@ -34,7 +34,7 @@ export const Contacts = () => {
                         <Button type="submit">Send message</Button>
                     </div>
                 </form>
-            </div>
+            </FadeIn>
         </section>
     );
 };

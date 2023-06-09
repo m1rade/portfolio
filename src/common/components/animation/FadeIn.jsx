@@ -7,22 +7,22 @@ export const FadeIn = ({ children, x, y, ...restProps }) => {
         rootMargin: "150px",
     });
 
-    const positionFromStyle = { 
-        opacity: "1", 
-        transform: "translate(0, 0)", 
-        transition: "all 2s ease" 
+    const positionFromStyle = {
+        opacity: "1",
+        transform: "translate(0, 0)",
+        transition: "opacity 2s ease, transform 2s ease",
     };
 
     const positionToStyle = {
         opacity: "0",
         transform: `translate(${x}, ${y})`,
-        transition: "all 2s ease",
+        transition: "opacity 2s ease, transform 2s ease",
     };
 
     return (
         <div
             ref={ref}
-            style={inView ? positionFromStyle : positionToStyle}
+            style={Object.assign({}, restProps.style, inView ? positionFromStyle : positionToStyle)}
             className={restProps.className && restProps.className}>
             {children}
         </div>
