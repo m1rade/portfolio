@@ -10,7 +10,6 @@ export const Navlink = ({ navRoute, children, showTooltip, ...restProps }) => {
     const handleOnHoverLink = () => {
         setVisible(!isVisible);
     };
-    console.log(restProps.offset);
 
     return (
         <Link

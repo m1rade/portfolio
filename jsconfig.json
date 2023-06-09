@@ -3,6 +3,9 @@
         "module": "commonjs",
         "target": "es6",
         "baseUrl": "src",
+        "paths": {
+            "@/*": ["src/*"]
+        },
         "jsx": "react",
         "allowJs": true
     },
