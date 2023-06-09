@@ -1,4 +1,4 @@
-import { Button, Subtitle } from "common/components";
+import { Button, FadeIn, Subtitle } from "common/components";
 import { navigation } from "common/routes";
 import React from "react";
 import { HiHome } from "react-icons/hi";
@@ -11,16 +11,19 @@ export const Main = () => {
                 <Subtitle subtitle="Introduce" icon={<HiHome />} />
                 <div className={s.innerContent}>
                     <div className={s.text}>
-                        <h1>
-                            Say Hi from <span>Golysheva Laura,</span> a Frontend Web Developer
-                        </h1>
-
-                        <p>I code beautifully simple things and I love what I do. Just simple like that!</p>
+                        <FadeIn x={"0px"} y={"180px"}>
+                            <h1>
+                                Say Hi from <span>Golysheva Laura,</span> a Frontend Web Developer
+                            </h1>
+                        </FadeIn>
+                        <FadeIn x={"0px"} y={"180px"}>
+                            <p>I code beautifully simple things and I love what I do. Just simple like that!</p>
+                        </FadeIn>
                     </div>
                 </div>
-                <div className={s.buttonWrapper}>
+                <FadeIn x={"0px"} y={"180px"} className={s.buttonWrapper}>
                     <Button className={s.buttonClass}>Download CV</Button>
-                </div>
+                </FadeIn>
             </div>
         </section>
     );

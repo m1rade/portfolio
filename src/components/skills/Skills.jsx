@@ -13,25 +13,25 @@ export const Skills = () => {
                 <Subtitle subtitle="My Skills" icon={<FaGraduationCap />} />
                 <Title title="Tech" title2="Stack" />
                 <div className={s.innerContent}>
-                    <Skill title="JavaScript">
+                    <Skill title="JavaScript" x={"-180px"} y={"0px"}>
                         <SiJavascript />
                     </Skill>
-                    <Skill title="HTML">
+                    <Skill title="HTML" x={"0px"} y={"180px"}>
                         <SiHtml5 />
                     </Skill>
-                    <Skill title="CSS">
+                    <Skill title="CSS" x={"180px"} y={"0px"}>
                         <SiCss3 />
                     </Skill>
-                    <Skill title="React">
+                    <Skill title="React" x={"-180px"} y={"0px"}>
                         <SiReact />
                     </Skill>
-                    <Skill title="Redux/Toolkit">
+                    <Skill title="Redux/Toolkit" x={"0px"} y={"-180px"}>
                         <SiRedux />
                     </Skill>
-                    <Skill title="Typescript">
+                    <Skill title="Typescript" x={"180px"} y={"0px"}>
                         <SiTypescript />
                     </Skill>
-                    <Skill title="Material UI">
+                    <Skill title="Material UI" x={"0px"} y={"180px"}>
                         <SiMui />
                     </Skill>
                 </div>
