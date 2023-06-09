@@ -64,13 +64,13 @@
         background: none;
         color: $primaryColor;
 
-        transition: .3s;
+        transition: background .3s, color .3s;
 
         &:hover {
             background: $primaryColor;
             color: #000;
 
-            transition: .3s;
+            transition: background .3s, color .3s;
         }
     }
 }}

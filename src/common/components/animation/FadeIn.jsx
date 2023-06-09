@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 export const FadeIn = ({ children, x, y, ...restProps }) => {
     const { ref, inView } = useInView({
         threshold: 0.2,
-        rootMargin: "150px",
+        rootMargin: "100px",
     });
 
     const positionFromStyle = {

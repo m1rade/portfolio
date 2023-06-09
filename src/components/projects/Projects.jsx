@@ -27,7 +27,7 @@ export const Projects = () => {
                         style={styleTodo}
                         link="https://it-incubator-to-do-list.vercel.app"
                         tech={["ReduxToolkit", "React Functional component"]}
-                        x={"180px"}
+                        x={"-180px"}
                         y={"0px"}
                     />
                     <Project
@@ -35,7 +35,7 @@ export const Projects = () => {
                         style={styleSocial}
                         link="https://github.com/m1rade/social-network"
                         tech={["React Class component", "Redux"]}
-                        x={"-180px"}
+                        x={"180px"}
                         y={"0px"}
                     />
                 </div>

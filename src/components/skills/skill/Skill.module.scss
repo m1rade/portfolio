@@ -5,9 +5,6 @@
     margin-bottom: 40px;
     width: 166px;
 
-    @media screen and (max-width: 741px) {
-        width: 31%;
-    }
 
     .inner {
         display: flex;
@@ -20,7 +17,7 @@
         border: 2px solid $borderColor;
         border-radius: 85px;
 
-        transition: .3s;
+        transition: border-color .3s;
 
         .icon {
             width: 90px;
@@ -28,7 +25,7 @@
             color: $primaryColor;
             opacity: 0.8;
 
-            transition: .3s;
+            transition: opacity .3s;
         }
     }
 
@@ -41,12 +38,12 @@
     &:hover>.inner {
         border-color: $primaryColor;
 
-        transition: .3s;
+        transition: border-color .3s;
     }
 
     &:hover>.inner>.icon {
         opacity: 1;
 
-        transition: .3s;
+        transition: opacity .3s;
     }
 }
