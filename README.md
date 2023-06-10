@@ -4,8 +4,8 @@
 Simple SPA with custom animations
 
 ## Tech stack
-*React
-*Sass
-*React-icons
-*React-intersection-observer hook
-*React scroll library
+* React
+* Sass
+* React-icons
+* React-intersection-observer hook
+* React scroll library
