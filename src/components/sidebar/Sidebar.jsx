@@ -1,3 +1,4 @@
+import photo from "assets/image/photo.jpg";
 import { Button } from "common/components";
 import { navigation } from "common/routes";
 import React from "react";
@@ -6,7 +7,6 @@ import { AiFillGithub, AiOutlineInstagram } from "react-icons/ai";
 import { HiOutlineEnvelope } from "react-icons/hi2";
 import { SiCodewars, SiSpotify } from "react-icons/si";
 import { Link } from "react-scroll";
-import photo from "../../assets/image/me.jpg";
 import s from "./Sidebar.module.scss";
 
 export const Sidebar = () => {
