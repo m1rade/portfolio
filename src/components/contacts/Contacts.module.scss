@@ -5,74 +5,78 @@
     @include blockStyle();
 
     .container {
-    @include displayFlex(flex-start, flex-start, column, wrap);
-    @include commonContainer();
+        @include displayFlex(flex-start, flex-start, column, wrap);
+        @include commonContainer();
 
-    .group {
-        width: 100%;
-        @include displayFlex(center, stretch, column, wrap);
+        .group {
+            width: 100%;
+            @include displayFlex(center, stretch, column, wrap);
 
-        .field {
-            margin-bottom: 34px;
-            @include displayFlex($flexDir: column, $justifyContent: stretch);
-        }
+            .field {
+                margin-bottom: 34px;
+                @include displayFlex($flexDir: column, $justifyContent: stretch);
+            }
 
-        label {
-            @include text(12px, 1.7, 400);
-            text-transform: uppercase;
-            color: $textColor;
-            margin-bottom: 2px;
+            label {
+                @include text(12px, 1.7, 400);
+                text-transform: uppercase;
+                color: $textColor;
+                margin-bottom: 2px;
 
-            sup {
-                color: #fc4545;
-                font-size: 12px;
-                vertical-align: baseline;
+                sup {
+                    color: #fc4545;
+                    font-size: 12px;
+                    vertical-align: baseline;
+                }
+            }
+
+            .inputField,
+            .messageField {
+                width: 100%;
+
+                @include text(18px, 1.7, 400);
+
+                margin: 0 0 0 -1px;
+                padding: 0 0 3px 0;
+
+                background: none;
+                border: none;
+                outline: none;
+
+                color: $textColor;
+
+                transition: all .2s;
+
+                &:-webkit-autofill {
+                    -webkit-text-fill-color: $secondaryTextColor;
+                    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+                    transition: background-color 5000s ease-in-out 0s;
+                }
+
+                &::placeholder {
+                    color: $secondaryTextColor;
+                }
+            }
+
+            .messageField {
+                height: 140px;
+                overflow: auto;
+                resize: none;
+
+                border-bottom: 1px solid #555555;
+            }
+
+            .buttonWrapper {
+                margin: 18px 0 18px 0;
+                padding-left: 12px;
+                max-width: 100%;
             }
         }
 
-
-        input,
-        textarea {
-            width: 100%;
-
-            font-family: inherit;
-            line-height: 1.7;
-            font-size: 18px;
-
-            margin: 0 0 0 -1px;
-            padding: 0 0 3px 0;
-
-            background: none;
-            border: none;
-            outline: none;
-
-            color: $textColor;
-
-            transition: .2s;
-        }
-
-        input::placeholder, textarea::placeholder {
-            color: $secondaryTextColor;
-        }
-
-        textarea {
-            height: 140px;
-            overflow: auto;
-            resize: none;
-
-            border-bottom: 1px solid #555555;
-        }
-
-        .buttonWrapper {
-            margin: 18px 0 18px 0;
-            padding-left: 12px;
-            max-width: 100%;
+        h3 {
+            margin-top: 0;
+            @include text(24px, 1.2, 300);
+            margin-bottom: 60px;
         }
     }
-
-    h3 {
-        margin-top: 0;
-        @include text(24px, 1.2, 300);
-        margin-bottom: 60px;
-    }
-}}
+}

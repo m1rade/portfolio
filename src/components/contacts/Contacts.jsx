@@ -16,19 +16,19 @@ export const Contacts = () => {
                         <label htmlFor="full-name">
                             Full name <sup>*</sup>
                         </label>
-                        <input type="text" id="full-name" placeholder="Your full name" />
+                        <input className={s.inputField} type="text" id="full-name" placeholder="Your full name" />
                     </div>
                     <div className={s.field}>
                         <label htmlFor="email">
                             Email <sup>*</sup>
                         </label>
-                        <input type="email" id="email" placeholder="Your email address" />
+                        <input className={s.inputField} type="email" id="email" placeholder="Your email address" />
                     </div>
                     <div className={s.field}>
                         <label htmlFor="message">
                             Message <sup>*</sup>
                         </label>
-                        <textarea id="message" placeholder="Write your message here ..."></textarea>
+                        <textarea className={s.messageField} id="message" placeholder="Write your message here ..."></textarea>
                     </div>
                     <div className={s.buttonWrapper}>
                         <Button type="submit">Send message</Button>
